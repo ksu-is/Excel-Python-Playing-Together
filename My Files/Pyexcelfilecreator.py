@@ -15,4 +15,4 @@ import datetime
 ws['A2'] = datetime.datetime.now()
 
 # Save the file
-wb.save("sample.xlsx")
+wb.save("testdata2.xlsx")
