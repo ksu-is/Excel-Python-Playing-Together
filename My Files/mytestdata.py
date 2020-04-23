@@ -31,7 +31,7 @@ sheet = workbook.active
 chart = LineChart()
 data = Reference(worksheet=sheet,
                  min_row=2,
-                 max_row=22,
+                 max_row=23,
                  min_col=1,
                  max_col=70)
 chart.add_data(data, from_rows=True, titles_from_data=True)
@@ -43,4 +43,4 @@ chart.y_axis.title = "Count"
 
 workbook.save("line_chart.xlsx")
 
-workbook.save("chart.xlsx")
+workbook.save("barchart.xlsx")
