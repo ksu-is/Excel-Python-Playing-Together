@@ -43,11 +43,10 @@ sheet.add_chart(chart, "C6")
 chart.x_axis.title = "Weeks"
 chart.y_axis.title = "Count"
 chart.title= " Count per Aircraft "
-chart.y_axis.title = "Count"
 #legend.position = "l"
 fill = PatternFill(fill_type=None,
                 start_color='FFFFFFFF',
                 end_color='FF000000')
 workbook.save("line_chart.xlsx")
 
-workbook.save("barchart.xlsx")
+#workbook.save("barchart.xlsx")
