@@ -2,7 +2,7 @@
 # see creating bar charts to creat a benad new file and hashtag comments at top
 
 from openpyxl import load_workbook
-from openpyxl.chart import AreaChart, Reference
+from openpyxl.chart import AreaChart, Reference, Series
 
 wb = load_workbook(filename='chart.xlsx')
 ws = wb.active
