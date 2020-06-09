@@ -8,9 +8,9 @@ wb = Workbook()  # There is no need to create a file on the filesystem to get st
 ws = wb.active  # A workbook is always created with at least one worksheet. You can get it by using the Workbook.active property:
 ws1 = wb.create_sheet("Mysheet")  # insert at the end (default)
 # or
-ws2 = wb.create_sheet("Mysheet", 0)  # insert at first position
+ws2 = wb.create_sheet("Yoursheet", 0)  # insert at first position
 # or
-ws3 = wb.create_sheet("Mysheet", -1)  # insert at the penultimate position
+ws3 = wb.create_sheet("Thesheet", -1)  # insert at the penultimate position
 
 ws.title = "New Title"  # gives a new title
 ws.sheet_properties.tabColor = "1072BA"
@@ -81,10 +81,10 @@ print(d.value)
 for row in ws.iter_rows(min_row=1, max_col=3, max_row=2, values_only=True):
     print(row)
 
-wb = Workbook()
+#wb = Workbook()
 wb.save('balances.xlsx')
 
-from openpyxl import load_workbook
+#from openpyxl import load_workbook
 
-wb2 = load_workbook('chart.xlsx')  # file to open must be in the same dirctory or must switch to get the file
-print(wb2.sheetnames)
+#wb2 = load_workbook('chart.xlsx')  # file to open must be in the same dirctory or must switch to get the file
+#print(wb2.sheetnames)
